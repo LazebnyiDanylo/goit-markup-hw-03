@@ -18,6 +18,32 @@ body {
   background-color: var(--first-background-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -31,6 +57,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--first-title-color);
+  margin-bottom: 72px;
 }
 
 .sub-title {
@@ -57,6 +84,23 @@ body {
   letter-spacing: 0.04em;
 }
 
+/* -------------HEADER------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  gap: 76px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -65,10 +109,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-button-color);
+  display: block;
 }
 
 .logo-header-part {
   color: var(--first-title-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-link {
@@ -77,6 +127,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--first-title-color);
+  display: block;
 }
 
 .header-link:hover,
@@ -88,8 +139,14 @@ body {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 .address-link {
   color: var(--first-text-color);
+  display: block;
 }
 
 .address-link:hover,
@@ -97,20 +154,18 @@ body {
   color: var(--hover-color);
 }
 
-.footer {
-  background-color: var(--second-background-color);
-}
-
-.logo-footer-part {
-  color: var(--second-text-color);
-}
-
-.footer-text {
-  color: var(--second-text-color);
-}
+/* -------------HERO------------- */
 
 .hero {
   background-color: var(--second-background-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -119,12 +174,17 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
   color: var(--first-button-color);
   background-color: var(--second-button-color);
   cursor: pointer;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -132,21 +192,133 @@ body {
   background-color: var(--hover-color);
 }
 
+/* -------------ADVANTAGES------------- */
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item {
+  width: 264px;
+}
+
+.advantage {
+  margin-bottom: 8px;
+}
+
+/* -------------ACTIVITY------------- */
+
+.activity {
+  padding-bottom: 120px;
+}
+
+.activity-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* -------------TEAM------------- */
+
 .team {
   background-color: var(--third-background-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: var(--first-background-color);
+  padding-bottom: 32px;
+}
+
+.team-img {
+  margin-bottom: 32px;
+}
+
+.team-name {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-post {
+  text-align: center;
+}
+
+/* -------------PORTFOLIO------------- */
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+}
+.portfolio-img {
+  margin-bottom: 32px;
+}
+
+.portfolio-item-title {
+  margin-bottom: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+/* -------------FILTER------------- */
+
+.portfolio-filter {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .filter-button {
   cursor: pointer;
   color: var(--second-button-color);
   background-color: var(--third-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
   color: var(--first-button-color);
   background-color: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -------------FOOTER------------- */
+
+.footer {
+  background-color: var(--second-background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-footer-part {
+  color: var(--second-text-color);
+  margin-bottom: 17.5px;
+}
+
+.footer-text {
+  color: var(--second-text-color);
+  width: 264px;
 }
