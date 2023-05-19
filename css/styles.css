@@ -1,0 +1,152 @@
+:root {
+  --first-text-color: #434455;
+  --second-text-color: #f4f4fd;
+  --first-title-color: #2e2f42;
+  --second-title-color: #ffffff;
+  --first-button-color: #ffffff;
+  --second-button-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --first-background-color: #ffffff;
+  --second-background-color: #2e2f42;
+  --third-background-color: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--first-text-color);
+  background-color: var(--first-background-color);
+}
+
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--first-title-color);
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-button-color);
+}
+
+.logo-header-part {
+  color: var(--first-title-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--first-text-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--hover-color);
+}
+
+.footer {
+  background-color: var(--second-background-color);
+}
+
+.logo-footer-part {
+  color: var(--second-text-color);
+}
+
+.footer-text {
+  color: var(--second-text-color);
+}
+
+.hero {
+  background-color: var(--second-background-color);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.hero-button {
+  color: var(--first-button-color);
+  background-color: var(--second-button-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-color);
+}
+
+.team {
+  background-color: var(--third-background-color);
+}
+
+.team-item {
+  background-color: var(--first-background-color);
+}
+
+.filter-button {
+  cursor: pointer;
+  color: var(--second-button-color);
+  background-color: var(--third-background-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--first-button-color);
+  background-color: var(--hover-color);
+}
